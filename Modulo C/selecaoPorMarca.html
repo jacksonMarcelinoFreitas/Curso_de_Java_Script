@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM </title>
+    <style> 
+        body {
+            background-color: rgb(107, 3, 148);
+            color:rgb(255, 255, 255);
+            font: normal 18 pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM </h1>
+        <p>Aqui vai o resultado</p>
+        <p> Aprendendo a usar o <strong>DOM</strong>em Java Script.</p>
+    <div> Clique em mim </div>
+    <script>
+        /*
+        Na seleção por Tag
+        - se quiser especificar qual a tag é necessário acrecentar [nº de sequência da tag]
+        - não é muito prático
+
+        innerText - pega o texto
+        innerHTML - pega o HTML
+        */
+
+        window.document.write('Neste exemplo usa-se a seleção por Marca "getElementByTagName" <br>')
+
+        var corpo = window.document.body
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        corpo.style.background = 'Black'
+
+        p1.style.color = 'yellow'
+
+        window.document.write(` Está escrito assim:  ${p1.innerText} <br>`) //Pega somente o texto
+
+        window.document.write(` Está escrito assim:  ${p1.innerHTML} <br>`) //Pega o HTML inteiro (incluindo formatções)
+        
+    </script>
+</body>
+</html>

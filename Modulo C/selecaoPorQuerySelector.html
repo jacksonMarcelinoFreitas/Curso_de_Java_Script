@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM </title>
+    <style> 
+        body {
+            background-color: rgb(107, 3, 148);
+            color:rgb(255, 255, 255);
+            font: normal 18 pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong>DOM</strong>em Java Script.</p>
+    <div id = "msg"> Div com ID </div>
+    <div class = "msg2" > Div com Class </div>
+    <script>
+
+        window.document.write('Neste exemplo usa-se a seleção por Seletor "QuerySelector"')
+
+        var d = window.document.querySelector('div#msg') //selecionado o iD (#)
+        d.style.background = 'green'
+        d.style.color ='yellow'
+
+        var d2 = window.document.querySelector('div.msg2') //selecionado a Class (.)
+        d2.style.background = 'yellow'
+        d2.style.color ='green'
+
+        
+
+    </script>
+</body>
+</html>
